@@ -1,5 +1,6 @@
 import React from "react";
 import FriendsList from "./FriendsList";
+import Button from "./Button";
 
 function Friend({ friend }) {
 return (
@@ -15,7 +16,7 @@ return (
       ) : (
           <p className="green">{`Sarah owes you ${friend.balance}$`}</p>
       )}
-      <button className="button">Select</button>
+      <Button>Select</Button>
     </li>
   </>
 );
