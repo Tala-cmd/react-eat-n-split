@@ -1,10 +1,11 @@
 import React from "react";
 import Button from "./Button";
 
-function Friend({ friend, friends, onAddFriends }) {
-return (
-  <>
-    <li>
+function Friend({ friend, onSelection, selectedFriend }) {
+  const isSelected = selectedFriend?.id === friend.id
+
+  return (
+    <li className={ isSelected ? 'selected': ''}>
       <img src={friend.image} alt={friend.name}></img>
       <h3>{friend.name}</h3>
 
@@ -15,10 +16,9 @@ return (
       ) : (
           <p className="green">{`Sarah owes you ${friend.balance}$`}</p>
       )}
-      <Button>Select</Button>
+      <Button onClick={()=> onSelection(friend)}>{isSelected? 'Close' : 'Select'}</Button>
     </li>
-  </>
-);
+  );
 }
 
 export default Friend;
