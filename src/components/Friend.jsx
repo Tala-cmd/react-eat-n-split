@@ -1,5 +1,4 @@
 import React from "react";
-import FriendsList from "./FriendsList";
 import Button from "./Button";
 
 function Friend({ friend }) {
