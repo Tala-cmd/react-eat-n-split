@@ -1,7 +1,7 @@
 import React from "react";
 import Button from "./Button";
 
-function Friend({ friend }) {
+function Friend({ friend, friends, onAddFriends }) {
 return (
   <>
     <li>
