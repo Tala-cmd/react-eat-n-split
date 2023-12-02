@@ -30,9 +30,9 @@ function App() {
     <div className='app'>
       <div className='sidebar'>
         <FriendsList data={initialFriends} />
+        {/* <FormAddFriend /> 
+        <Button>Add Friend</Button> */}
       </div>
-      
-      {/* <FormAddFriend /> */}
       <FormSplitBill />
     </div>
   )
