@@ -56,8 +56,6 @@ function App() {
     setSelectedFriend(null)
   }
 
-  
-
   return (
     <div className='app'>
       <div className='sidebar'>
@@ -82,6 +80,7 @@ function App() {
       <FormSplitBill 
       selectedFriend={selectedFriend}
       onSplitBill= {handleSplitBill}
+      key={selectedFriend.id}
       />}
       
     </div>
